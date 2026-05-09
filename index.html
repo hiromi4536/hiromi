@@ -5,25 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hiromiと三兄弟の物語</title>
     <style>
+    body {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.7;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        color: #333;
+        box-sizing: border-box;
+    }
+
+    h1 { color: #2c3e50; }
+    h2 { color: #34495e; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+
+    .compression {
+        background: #f8f9fa;
+        border: 2px solid #3498db;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 25px 0;
+        font-family: monospace;
+        width: 100%;               /* 追加 */
+        box-sizing: border-box;    /* 追加 */
+        overflow-x: auto;          /* 追加：横スクロールできるように */
+        white-space: pre-wrap;     /* 追加：必要に応じて折り返し */
+    }
+
+    .compression pre {
+        margin: 0;
+        overflow-x: auto;
+        word-break: break-all;     /* 長い英数字対策 */
+    }
+
+    /* スマホ向け調整 */
+    @media (max-width: 600px) {
         body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.7;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #333;
+            padding: 0 15px;
+            margin: 20px auto;
         }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; border-bottom: 2px solid #eee; padding-bottom: 8px; }
         .compression {
-            background: #f8f9fa;
-            border: 2px solid #3498db;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            font-family: monospace;
+            padding: 15px;
+            font-size: 0.95em;
         }
-    </style>
+    }
+</style>
 </head>
 <body>
     <h1>hiromiさんと三兄弟の物語</h1>
